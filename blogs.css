@@ -1,0 +1,271 @@
+/* Common styles for body, h1, h2, p, ul */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+    padding-right: 30px;
+}
+
+#head .profile-picture {
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#head .profile-picture:hover {
+    transform: scale(1.5);
+    box-shadow: 0 2px 4px rgba(0.4, 0.4, 0.4, 0.4);
+}
+
+#head p:hover,
+#head h1:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigation styles */
+nav {
+    padding-top: 124px;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #3498db;
+    transform: scale(1.5);
+}
+
+nav ul li {
+    transition: 0.5s ease;
+    display: inline;
+    margin-right: 20px;
+    border: #f2f2f2 solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+    z-index: 1;
+    
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Post styles */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-post {
+    width: calc(25% - 20px); /* Adjust the width as needed for four posts per row */
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.blog-post h2 {
+    color: #333;
+}
+
+.post-meta {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #2980b9;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add these styles to enhance the contact form appearance */
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2, h3, p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+p a {
+    color: #3498db;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    #head {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-top: 0;
+        z-index: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .blog-post {
+        width: calc(50% - 20px); /* Adjust the width as needed for two posts per row on smaller screens */
+    }
+}
+/* Existing code remains unchanged */
+
+/* Blog Post Image styles */
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+/* Additional styles for blog posts */
+.blog-post {
+    width: calc(25% - 20px); /* Adjust the width as needed for four posts per row */
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
